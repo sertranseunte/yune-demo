@@ -229,7 +229,15 @@
         transform: translateY(0);
         box-shadow: 0 2px 6px rgba(129, 199, 132, 0.3);
     }
-       
+
+    .fade-img {
+    opacity: 0;                    
+    transition: opacity 0.8s ease; 
+    }
+
+   .fade-img.loaded {
+    opacity: 1;                    
+   }
     </style>
 </head>
 
@@ -249,7 +257,7 @@
         <div class="grid">
 
             <div class="card">
-                <img src="jabon_arroz.jpg" alt="Jabón de Arroz">
+                <img src="jabon_arroz.jpg" alt="Jabón de Arroz" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón de Arroz</h3>
                     <p>Suaviza e hidrata la piel. Ideal para uso diario.</p>
@@ -259,7 +267,7 @@
             </div>
 
             <div class="card">
-                <img src="jabon_carbon.jpg" alt="Jabón de Carbón">
+                <img src="jabon_carbon.jpg" alt="Jabón de Carbón" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón de Carbón</h3>
                     <p>Limpieza profunda, elimina impurezas y grasa.</p>
@@ -269,7 +277,7 @@
             </div>
 
             <div class="card">
-                <img src="jabon_de_rosa.jpg" alt="Jabón rosas">
+                <img src="jabon_de_rosa.jpg" alt="Jabón rosas" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón De Rosas Silvestres</h3>
                     <p>Hecho con rosas silvestres trituradas. Limpia suavemente y deja la piel con una sensación fresca y agradable.</p>
@@ -279,7 +287,7 @@
             </div>
 
             <div class="card">
-                <img src="Jabón_de_Nin.jpg" alt="Jabón de Nin">
+                <img src="Jabón_de_Nin.jpg" alt="Jabón de Nin" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón De Nin</h3>
                     <p>Elaborado con hojas de nin, usado para ayudar a limpiar la piel y apoyar el cuidado de pieles con tendencia al acné.</p>
@@ -289,7 +297,7 @@
             </div>
 
             <div class="card">
-                <img src="jabon_curcuma.jpg" alt="Jabón de Cúrcuma">
+                <img src="jabon_curcuma.jpg" alt="Jabón de Cúrcuma" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón de Cúrcuma</h3>
                     <p>Hecho con Cúrcuma, conocida por ayudar a cuidar la piel. Tradicionalmente utilizada para ayudar a atenuar las manchas.</p>
@@ -299,7 +307,7 @@
             </div>
 
             <div class="card">
-                <img src="Jabón_de_fresa.jpg" alt="Jabón de Fresas">
+                <img src="Jabón_de_fresa.jpg" alt="Jabón de Fresas" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón De Fresas</h3>
                     <p>Pensado para limpiar la piel suavemente mientras deja una sensación fresca y agradable.</p>
@@ -323,3 +331,4 @@
 </body>
 
 </html>
+
