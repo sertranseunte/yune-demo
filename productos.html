@@ -238,18 +238,22 @@
        .fade-img.loaded {
         opacity: 1;                    
        }
-        .logo img {
-         animation: breathe 6s ease-in-out infinite !important;
-         transform-origin: center center !important;
-      }
+       header .logo img,
+       .logo img {                     
+          animation: breathe 6s ease-in-out infinite !important;
+          transform-origin: center center !important;
+          will-change: transform;     
+       }
 
         @keyframes breathe {
-          0%, 100% {
-          transform: scale(1);
-      }
-          50% {
-          transform: scale(1.08);       }
+           0%, 100% {
+           transform: scale(1);
+          }
+            50% {
+          transform: scale(1.15);  
+           }
        }
+       
     </style>
 </head>
 
@@ -343,6 +347,7 @@
 </body>
 
 </html>
+
 
 
 
