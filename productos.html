@@ -240,10 +240,14 @@
        }
        header .logo img,
        .logo img {                     
-          animation: breathe 6s ease-in-out infinite !important;
-          transform-origin: center center !important;
+          animation: breathe 6s ease-in-out infinite;
+          transform-origin: center center;
           will-change: transform;
        }
+        header .logo img:hover,
+        .logo img:hover {
+            animation-play-state: paused;
+        }
 
         @keyframes breathe {
            0%, 100% {
@@ -252,7 +256,7 @@
         
           }
             50% {
-          transform: scale(1.04);
+          transform: scale(1.06);
           
            }
        }
@@ -350,6 +354,7 @@
 </body>
 
 </html>
+
 
 
 
