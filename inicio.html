@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yune - Pantalla de Inicio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to bottom,  #F2F6F3,#c1f0d6);
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;           
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 380px;       
+            height: auto;
+            display: block;
+            opacity: 0;
+            animation: fadeIn 1.8s ease forwards;
+        }
+
+    
+        .logo:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        
+        @media (max-width: 900px) {
+            .logo {
+                max-width: 320px;
+            }
+            .container {
+                gap: 1px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;   
+                gap: 24px;             
+                padding: 30px 20px;
+            }
+
+            .logo {
+                max-width: 85vw;        
+                width: 100%;
+                max-width: 340px;         
+            }
+
+    
+            .logo {
+                animation-duration: 1.4s;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                max-width: 90vw;
+            }
+            .container {
+                gap: 20px;
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body class="fade-in">
+
+    <a href="productos.html" class="container">
+         <img src="logo.png"     alt="Logo Yune" class="logo"> 
+         <img src="bifglogo.png" alt="Sello / Logo secundario Yune" class="logo"> 
+        </a>
+
+</body>
+</html>
