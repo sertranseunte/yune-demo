@@ -243,18 +243,17 @@
           animation: breathe 6s ease-in-out infinite !important;
           transform-origin: center center !important;
           will-change: transform;
-          box-shadow: 0 8px 20px rgba (155, 123, 189, 0.15);
-           transition: box-shadow 0.3 ease;
        }
 
         @keyframes breathe {
            0%, 100% {
            transform: scale(1);
-              box-shadow: 0 8px 20px rgba (155, 123, 189, 0.15);
+           filter: brightness(1);
+        
           }
             50% {
-          transform: scale(1.15);
-           box-shadow: 0 12px 30px rgba (155, 123, 189, 0.3);
+          transform: scale(1.04);
+          filter: brightness(1.08);
            }
        }
        
@@ -351,6 +350,7 @@
 </body>
 
 </html>
+
 
 
 
