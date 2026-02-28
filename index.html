@@ -64,28 +64,25 @@
             to { opacity: 1; }
         }
 
-        
-        @media (max-width: 768px) {
-            .logo {
-                max-width: 300px;
-            }
-            .logo img {
-                max-width: 280px;
-            }
-            .container {
-                gap: 1px;
-            }
-        }
+        .logo {
+    text-align: center;
+    padding: 30px 0;
+       }
 
-        @media (min-width: 1200px) {
-            .logo img {
-                max-width: 450px;
-            }
-            .container {
-                gap: 20px;
-                padding: 20px 15px;
-            }
-        }
+       .logo img {
+    max-width: 40vw;          
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+      }
+
+
+    @media (max-width: 768px) {
+    .logo img {
+        max-width: 60vw;     
+    }
+     }
+      
         .fade-img {
             opacity: 0;
             transition: opacity 0.6s ease;  
@@ -105,6 +102,7 @@
 
 </body>
 </html>
+
 
 
 
