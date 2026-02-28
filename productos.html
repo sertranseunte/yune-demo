@@ -239,20 +239,17 @@
         opacity: 1;                    
        }
         .logo img {
-        animation: breathe 6s ease-in-out infinite;  
-        transform-origin: center center;             
-       }
+         animation: breathe 6s ease-in-out infinite !important;
+         transform-origin: center center !important;
+      }
 
-
-       @keyframes breathe {
-         0%, 100% {
-        transform: scale(1);                   
+        @keyframes breathe {
+          0%, 100% {
+          transform: scale(1);
+      }
+          50% {
+          transform: scale(1.08);       }
        }
-       50% {
-        transform: scale(1.04);                  
-       }
-       }
-    
     </style>
 </head>
 
@@ -346,6 +343,7 @@
 </body>
 
 </html>
+
 
 
 
