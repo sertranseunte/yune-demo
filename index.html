@@ -38,14 +38,24 @@
         }
 
         .logo {
-            max-width: 380px;       
+            max-width: 500px;       
             height: auto;
-            display: block;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             opacity: 0;
             animation: fadeIn 1.8s ease forwards;
+            margin: 20px auto;
         }
+        .logo img {
+        width: 100%;          
+        max-width: 380px;         
+        height: auto;             
+        object-fit: contain;      
+        border-radius: 50%;       
 
-    
+        }
         .logo:nth-child(2) {
             animation-delay: 0.5s;
         }
@@ -55,37 +65,21 @@
         }
 
         
-        @media (max-width: 900px) {
+        @media (max-width: 768px) {
             .logo {
-                max-width: 320px;
+                max-width: 300px;
+            }
+            .logo img {
+                max-width: 280px;
             }
             .container {
                 gap: 1px;
             }
         }
 
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;   
-                gap: 24px;             
-                padding: 30px 20px;
-            }
-
-            .logo {
-                max-width: 85vw;        
-                width: 100%;
-                max-width: 340px;         
-            }
-
-    
-            .logo {
-                animation-duration: 1.4s;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .logo {
-                max-width: 90vw;
+        @media (min-width: 1200px) {
+            .logo img {
+                max-width: 450px;
             }
             .container {
                 gap: 20px;
@@ -111,6 +105,7 @@
 
 </body>
 </html>
+
 
 
 
