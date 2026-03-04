@@ -110,6 +110,24 @@
         .fade-img.loaded {
             opacity: 1;
         }
+         .hint-footer {
+            
+           position: fixed;
+           bottom: 15px;                
+           left: 0;
+           right: 0;
+           text-align: center;
+           color: rgba(70, 112, 86, 0.6); 
+           font-size: 0.9rem;           
+           font-family: system-ui, sans-serif;
+           font-weight: 400;            
+           pointer-events: none;        
+           z-index: 5;                  
+           padding: 8px;
+           background: transparent;    
+           opacity: 0.8;                
+           animation: fadeHint 4s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="fade-in">
@@ -118,9 +136,12 @@
          <img src="logo.png"  alt="Logo Yune" class="logo" width="200" height="300" class="fade-img" onload="this.classList.add('loaded')"> 
          <img src="bifglogo.png" alt="Sello / Logo secundario Yune" class="logo" width="200" height="300" class="fade-img" onload="this.classList.add('loaded')"> 
         </a>
-
+       <footer class="hint-footer">
+    <p>Haz click para acceder</p>
+       </footer>
 </body>
 </html>
+
 
 
 
