@@ -38,6 +38,7 @@
             gap: 20px;           
             flex-wrap: wrap;
             padding: 20px;
+            user-select: none;
         }
 
         .logo {
@@ -57,7 +58,8 @@
         max-width: 380px;         
         height: auto;             
         object-fit: contain;      
-        border-radius: 50%;       
+        border-radius: 50%; 
+        user-select: none;
 
         }
         .logo:nth-child(2) {
@@ -74,7 +76,8 @@
     align-items: center;
     width: 100%;
     max-width: 500px;         
-    margin: 30px auto 20px;   
+    margin: 30px auto 20px;  
+   user-select: none;
 }
 
 .logo img {
@@ -141,7 +144,7 @@
         }
     </style>
 </head>
-<body class="fade-in">
+<body class="fade-in"   user-select: none; >
 
     <a href="productos.html" class="container"  user-select: none;>
          <img src="logo.png"  alt="Logo Yune" width="200" height="300 "class="logo"  class="fade-img" onload="this.classList.add('loaded')"> 
@@ -152,6 +155,7 @@
        </footer>
 </body>
 </html>
+
 
 
 
