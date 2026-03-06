@@ -87,6 +87,7 @@
     .logo {
         max-width: 280px;     
         margin: 20px auto 15px;
+        
     }
 
     .logo img {
@@ -99,6 +100,7 @@
 @media (max-width: 480px) {
     .logo img {
         max-width: 220px;
+        user-select: none;
     }
 }
     
@@ -133,8 +135,8 @@
 </head>
 <body class="fade-in">
 
-    <a href="productos.html" class="container">
-         <img src="logo.png"  alt="Logo Yune" class="logo" width="200" height="300" class="fade-img" onload="this.classList.add('loaded')"> 
+    <a href="productos.html" class="container"  user-select: none;>
+         <img src="logo.png"  alt="Logo Yune" width="200" height="300 "class="logo"  class="fade-img" onload="this.classList.add('loaded')"> 
          <img src="bifglogo.png" alt="Sello / Logo secundario Yune" class="logo" width="200" height="300" class="fade-img" onload="this.classList.add('loaded')"> 
         </a>
        <footer class="hint-footer">
@@ -142,6 +144,7 @@
        </footer>
 </body>
 </html>
+
 
 
 
