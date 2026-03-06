@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Equipo - YN Jabones Artesanales</title>
+    <meta name="description" content="Conoce al equipo detrás de YUNE Natural Soaps y sus aportes al proyecto.">
+    
+   
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <style>
+        :root {
+            --morado: #9b7bbd;
+            --morado-oscuro: #7a5aa3;
+            --gris-fondo: #f4f4f4;
+            --blanco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #ebc6f391;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #FBF8FD, #E9DFF2);
+            padding: 15px 8%;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(120,90,140,0.08);
+        }
+
+        header h1 {
+            color: var(--morado-oscuro);
+            font-size: 2.2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-8px);
+        }
+
+        .member-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-position: center;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            border: 4px solid var(--morado);
+        }
+
+        .member-name {
+            color: var(--morado-oscuro);
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .member-role {
+            color: var(--morado);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .member-contribution {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        footer {
+            background: linear-gradient(to bottom, rgba(180, 121, 180, 0.712), rgba(218, 99, 218, 0.692));
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: var(--morado);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--morado-oscuro);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nuestro Equipo</h1>
+    </header>
+
+    <div class="container">
+        <div class="team-grid">
+
+           
+            <div class="team-member">
+                <img src="yehhh0.2.JPG" alt="Foto de edenis " class="member-photo">
+                <h2 class="member-name">Edenis Díaz</h2>
+                <p class="member-role">Desarrollador Web y Diseñador</p>
+                <p class="member-contribution">
+                    Creé la estructura de las páginas, el diseño responsive, la animación del logo y los botones de WhatsApp. También optimicé las imágenes para que carguen rápido.
+                </p>
+            </div>
+
+          
+            <div class="team-member">
+                <img src="uny.png" alt="Foto de Unilaury" class="member-photo">
+                <h2 class="member-name">Unilaury Montaño</h2>
+                <p class="member-role">Especialista en Contenido y Marketing</p>
+                <p class="member-contribution">
+                    Redactó las descripciones de los jabones, investigó los ingredientes naturales y diseñó el contenido para redes sociales. Aportó ideas para que el negocio se vea más atractivo.
+                </p>
+            </div>
+        
+            <div class="team-member">
+                <img src="yerald.png" alt="Foto de yerald" class="member-photo">
+                <h2 class="member-name">Yerald Ismael Paulino</h2>
+                <p class="member-role">Encargado de contactos comerciales</p>
+                <p class="member-contribution">
+                  Realizó la búsqueda y recopilación de contactos potenciales de compradores y distribuidores para apoyar la expansión de YUNE Natural Soaps. 
+                </p>
+            </div>
+
+               <div class="team-member">
+                <img src="nathalia.png" alt="Foto de Nathalia" class="member-photo">
+                <h2 class="member-name">Nathalia Feliz</h2>
+                <p class="member-role">Apoyo en organización y logística</p>
+                <p class="member-contribution">
+                 Colaboró en la coordinación general del proyecto, revisión de avances y alineación de elementos para cumplir con los plazos establecidos.
+                </p>
+            </div>
+
+           
+
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="productos.html" class="back-btn">Volver a los productos</a>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 YN Jabones Artesanales | Todos los derechos reservados
+        <br>
+       
+    </footer>
+
+</body>
+</html>
