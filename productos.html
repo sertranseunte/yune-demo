@@ -8,8 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    
-    
+
     <style>
         :root {
             --morado: #9b7bbd;
@@ -26,38 +25,33 @@
         }
 
         body {
-            background:  #ebc6f391;
+            background: #ebc6f391;
         }
 
         header {
-            background:  linear-gradient( to bottom, #FBF8FD, #E9DFF2);
+            background: linear-gradient(to bottom, #FBF8FD, #E9DFF2);
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            padding: 15px 8%;
+            padding: 10px 8%;
             box-shadow: 0 4px 20px rgba(120,90,140,0.08);
-            padding: 2px 5%;
-                
-       
         }
+
         .logo {
-           display: flex;
-           justify-content: center;  
-           align-items: center;      
-           width: 100%; 
-           max-width: 650px;
-           padding: 10px 0;             
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            padding: 8px 0;
         }
 
         .logo img {
+            width: 100%;
+            max-width: 350px;
             height: auto;
-            width: 100% ;
-            max-width: 450px;
             object-fit: contain;
             border-radius: 50%;
-            
-            
-           
         }
 
         nav a {
@@ -73,7 +67,7 @@
         }
 
         .hero {
-            background: linear-gradient(to bottom, rgba(180, 121, 180, 0.712), rgba(218, 99, 218, 0.692) );
+            background: linear-gradient(to bottom, rgba(180, 121, 180, 0.712), rgba(218, 99, 218, 0.692));
             color: white;
             text-align: center;
             padding: 15px 5px;
@@ -160,132 +154,132 @@
         }
 
         footer {
-            background: linear-gradient(to bottom,  rgba(180, 121, 180, 0.712), rgba(218, 99, 218, 0.692) );
+            background: linear-gradient(to bottom, rgba(180, 121, 180, 0.712), rgba(218, 99, 218, 0.692));
             color: white;
             text-align: center;
             padding: 20px;
             margin-top: 40px;
         }
-        .ws-footer{
-          color:#25D366;
-          text-decoration:none;
-          font-weight:bold;
+
+        .ws-footer {
+            color: #25D366;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .ws-footer:hover{
-          text-decoration:underline;
+
+        .ws-footer:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
             header {
-                flex-direction: column;
-                padding: 2px 5%;
+                padding: 8px 5%;
             }
             .logo {
-                max-width: 320px;
-                padding: 10px 0;
+                max-width: 280px;
+                padding: 5px 0;
             }
             .logo img {
-                max-width: 280px;
+                max-width: 240px;
             }
-
-
             nav {
                 margin-top: 10px;
             }
         }
+
         .inicio {
-          display: block;                
-          text-align: center;            
-          margin: 40px auto 30px;        
-          font-size: 3rem;               
-          color: var(--morado-oscuro);
-          text-decoration: none;
-          padding: 15px;                 
-          transition: color 0.3s ease;
-        }  
-        
-        .inicio:hover {
-            color: var(--morado);      
+            display: block;
+            text-align: center;
+            margin: 40px auto 30px;
+            font-size: 3rem;
+            color: var(--morado-oscuro);
+            text-decoration: none;
+            padding: 15px;
+            transition: color 0.3s ease;
         }
-        
-        
+
+        .inicio:hover {
+            color: var(--morado);
+        }
+
         @media (max-width: 768px) {
             .inicio {
-                margin: 30px auto 20px;   
-                font-size: 2.8rem;         
+                margin: 30px auto 20px;
+                font-size: 2.8rem;
             }
-            .btn-encargar {
-        width: 100%;            
-        min-width: auto;        
-    }
-        } 
-         .btn-wrapper {
-         display: inline-block;           
-         margin: 20px 0;                  
-         text-align: center;              
         }
-    
-         .btn-encargar {
-        display: inline-block;
-        background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7);  
-        color: #1B5E20;                  
-        padding: 12px 28px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1.05rem;
-        border: 1px solid #81C784;    
-        box-shadow: 0 3px 10px rgba(129, 199, 132, 0.25);  
-        transition: all 0.3s ease;
-        cursor: pointer;
-        margin-left: 110px; 
-       }
-    
-       .btn-encargar:hover {
-        background: linear-gradient(135deg, #c8e6c9, #a5d6a7, #81c784); 
-        transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(129, 199, 132, 0.4);
-        color: #1B5E20;                  
-       }
-    
-      .btn-encargar:active {
-        transform: translateY(0);
-        box-shadow: 0 2px 6px rgba(129, 199, 132, 0.3);
-       }
 
-       .fade-img {
-       opacity: 0;                    
-       transition: opacity 0.8s ease; 
-       }
+        .btn-wrapper {
+            display: flex;                
+            justify-content: center;         
+            align-items: center;
+            margin: 20px 0;
+            width: 100%;                     
+        }
 
-       .fade-img.loaded {
-        opacity: 1;                    
-       }
-       header .logo img,
-       .logo img {                     
-          animation: breathe 4s ease-in-out infinite;
-          transform-origin: center center;
-          will-change: transform;
-       }
+        .btn-encargar {
+            display: inline-block;
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7);
+            color: #1B5E20;
+            padding: 12px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            border: 1px solid #81C784;
+            box-shadow: 0 3px 10px rgba(129, 199, 132, 0.25);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-width: 180px;                
+            text-align: center;             
+        }
 
+        .btn-encargar:hover {
+            background: linear-gradient(135deg, #c8e6c9, #a5d6a7, #81c784);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(129, 199, 132, 0.4);
+            color: #1B5E20;
+        }
+
+        .btn-encargar:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(129, 199, 132, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .btn-encargar {
+                width: 100%;        
+                min-width: auto;
+            }
+        }
+
+        .fade-img {
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .fade-img.loaded {
+            opacity: 1;
+        }
+
+        header .logo img,
+        .logo img {
+            animation: breathe 4s ease-in-out infinite;
+            transform-origin: center center;
+            will-change: transform;
+        }
 
         @keyframes breathe {
-           0%, 100% {
-           transform: scale(1);
-           
-        
-          }
+            0%, 100% {
+                transform: scale(1);
+            }
             50% {
-          transform: scale(1.04);
-          
-           }
-       }
-       
+                transform: scale(1.04);
+            }
+        }
     </style>
 </head>
-
 <body>
-
     <header>
         <div class="logo">
             <img src="logo.png" alt="Logo YM" height="200" class="fade-img" onload="this.classList.add('loaded')">
@@ -298,94 +292,88 @@
 
     <section class="productos">
         <div class="grid">
-
             <div class="card">
-                <img src="jabon_arroz.jpg" alt="Jabón de Arroz" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
+                <img src="jabon_arroz.jpg" alt="Jabón de Arroz" width="300" height="300" loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón de Arroz</h3>
                     <p>Suaviza e hidrata la piel. Ideal para uso diario.</p>
                     <span class="precio">RD$100</span>
-                   <div class="btn-wrapper"> <a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Arroz" class="btn-encargar">Encargar</a></div>
+                    <div class="btn-wrapper">
+                        <a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Arroz" class="btn-encargar">Encargar</a>
+                    </div>
                 </div>
             </div>
 
+            <!-- Las otras tarjetas siguen igual, solo copia el <div class="btn-wrapper"> en cada una -->
             <div class="card">
-                <img src="jabon_carbon.jpg" alt="Jabón de Carbón" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
+                <img src="jabon_carbon.jpg" alt="Jabón de Carbón" width="300" height="300" loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón de Carbón</h3>
                     <p>Limpieza profunda, elimina impurezas y grasa.</p>
                     <span class="precio">RD$100</span>
-                    <div class="btn-wrapper"><a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Carbon" class="btn-encargar">Encargar</a></div>
+                    <div class="btn-wrapper">
+                        <a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Carbon" class="btn-encargar">Encargar</a>
+                    </div>
                 </div>
             </div>
 
             <div class="card">
-                <img src="jabon_de_rosa.jpg" alt="Jabón rosas" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
+                <img src="jabon_de_rosa.jpg" alt="Jabón rosas" width="300" height="300" loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón De Rosas Silvestres</h3>
                     <p>Hecho con rosas silvestres trituradas. Limpia suavemente y deja la piel con una sensación fresca y agradable.</p>
                     <span class="precio">RD$125</span>
-                    <div class="btn-wrapper"><a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Rosas" class="btn-encargar">Encargar</a></div>
+                    <div class="btn-wrapper">
+                        <a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Rosas" class="btn-encargar">Encargar</a>
+                    </div>
                 </div>
             </div>
 
             <div class="card">
-                <img src="Jabón_de_Nin.jpg" alt="Jabón de Nin" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
+                <img src="Jabón_de_Nin.jpg" alt="Jabón de Nin" width="300" height="300" loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón De Nin</h3>
                     <p>Elaborado con hojas de nin, usado para ayudar a limpiar la piel y apoyar el cuidado de pieles con tendencia al acné.</p>
                     <span class="precio">RD$100</span>
-                    <div class="btn-wrapper"><a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Nin" class="btn-encargar" >Encargar</a></div>
+                    <div class="btn-wrapper">
+                        <a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Nin" class="btn-encargar">Encargar</a>
+                    </div>
                 </div>
             </div>
 
             <div class="card">
-                <img src="jabon_curcuma.jpg" alt="Jabón de Cúrcuma" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
+                <img src="jabon_curcuma.jpg" alt="Jabón de Cúrcuma" width="300" height="300" loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón de Cúrcuma</h3>
                     <p>Hecho con Cúrcuma, conocida por ayudar a cuidar la piel. Tradicionalmente utilizada para ayudar a atenuar las manchas.</p>
                     <span class="precio">RD$100</span>
-                    <div class="btn-wrapper"><a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Curcuma" class="btn-encargar">Encargar</a></div>
+                    <div class="btn-wrapper">
+                        <a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Curcuma" class="btn-encargar">Encargar</a>
+                    </div>
                 </div>
             </div>
 
             <div class="card">
-                <img src="Jabón_de_fresa.jpg" alt="Jabón de Fresas" width="300" height="300"loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
+                <img src="Jabón_de_fresa.jpg" alt="Jabón de Fresas" width="300" height="300" loading="lazy" class="fade-img" onload="this.classList.add('loaded')">
                 <div class="card-content">
                     <h3>Jabón De Fresas</h3>
                     <p>Pensado para limpiar la piel suavemente mientras deja una sensación fresca y agradable.</p>
                     <span class="precio">RD$150</span>
-                    <div class="btn-wrapper"><a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Fresas" class="btn-encargar">Encargar</a></div>
+                    <div class="btn-wrapper">
+                        <a href="https://wa.me/18295866937?text=Hola,%20quiero%20el%20Jabon%20de%20Fresas" class="btn-encargar">Encargar</a>
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <nav>
-        <a href="index.html" class="inicio">🏠︎</a>
+        <a href="index.html" class="inicio">🏠</a>
     </nav>
 
     <footer>
         © 2026 YN Jabones Artesanales | Todos los derechos reservados |
-         <a href="https://wa.me/18295866937" class="ws-footer" target="_blank">💬 WhatsApp </a>
+        <a href="https://wa.me/18295866937" class="ws-footer" target="_blank">💬 WhatsApp</a>
     </footer>
-
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
