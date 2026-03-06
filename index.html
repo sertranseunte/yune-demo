@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yune - Pantalla de Inicio</title>
     <meta name="description" content="YUNE Natural Soaps. Jabones artesanales naturales hechos a mano, suaves con la piel y el medio ambiente.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
     <style>
         * {
             margin: 0;
@@ -17,9 +19,10 @@
 
         body {
             min-height: 100vh;
-            background: linear-gradient(to bottom,  #F2F6F3,#c1f0d6);
+            background: linear-gradient(to bottom, #F2F6F3, #c1f0d6);
             background-attachment: fixed;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             font-family: system-ui, -apple-system, sans-serif;
@@ -29,39 +32,41 @@
             display: block;
             text-decoration: none;
             color: inherit;
+            width: 100%;
+            text-align: center;
         }
 
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;           
+            gap: 20px;
             flex-wrap: wrap;
             padding: 20px;
-            user-select: none;
+            max-width: 1000px;
+            width: 100%;
         }
 
         .logo {
-            max-width: 500px;       
-            height: auto;
+            max-width: 500px;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             opacity: 0;
             animation: fadeIn 1.8s ease forwards;
-            margin: 20px auto;
             user-select: none;
         }
-        .logo img {
-        width: 100%;          
-        max-width: 380px;         
-        height: auto;             
-        object-fit: contain;      
-        border-radius: 50%; 
-        user-select: none;
 
+        .logo img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 50%;
+            user-select: none;
         }
+
         .logo:nth-child(2) {
             animation-delay: 0.5s;
         }
@@ -70,102 +75,73 @@
             to { opacity: 1; }
         }
 
-        .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 500px;         
-    margin: 30px auto 20px;  
-   user-select: none;
-}
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 280px;
+            }
+            .logo img {
+                max-width: 260px;
+            }
+        }
 
-.logo img {
-    width: 100%;
-    max-width: 380px;        
-    height: auto;
-    object-fit: contain;
-    border-radius: 50%;
-    user-select: none;
-}
+        @media (max-width: 480px) {
+            .logo img {
+                max-width: 220px;
+            }
+        }
 
-
-@media (max-width: 768px) {
-    .logo {
-        max-width: 280px;     
-        margin: 20px auto 15px;
-        user-select: none;
-     
-        
-    }
-
-    .logo img {
-        max-width: 260px;  
-        user-select: none;
-      
-    }
-}
-
-
-@media (max-width: 480px) {
-    .logo img {
-        max-width: 220px;
-        user-select: none;
-    }
- 
-}
-    
-      
         .fade-img {
             opacity: 0;
-            transition: opacity 0.6s ease;  
+            transition: opacity 0.6s ease;
         }
 
         .fade-img.loaded {
             opacity: 1;
         }
-         .hint-footer {
-            
-           position: fixed;
-           bottom: 15px;                
-           left: 0;
-           right: 0;
-           text-align: center;
-           color: rgba(70, 112, 86, 0.6); 
-           font-size: 0.9rem;           
-           font-family: system-ui, sans-serif;
-           font-weight: 400;            
-           pointer-events: none;        
-           z-index: 5;                  
-           padding: 8px;
-           background: transparent;    
-           opacity: 0.8;                
-           animation: fadeHint 4s ease-in-out infinite;
+
+       
+        .hint-footer {
+            position: fixed;
+            bottom: 12px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: rgba(70, 112, 86, 0.65);
+            font-size: 0.85rem;
+            font-family: system-ui, sans-serif;
+            pointer-events: none;
+            z-index: 5;
+            padding: 6px;
+            background: transparent;
+            opacity: 0.75;
+            animation: fadeHint 5s ease-in-out infinite;
+            user-select: none;
+        }
+
+        @keyframes fadeHint {
+            0%, 100% { opacity: 0.6; }
+            50%      { opacity: 0.85; }
+        }
+
+        @media (max-width: 768px) {
+            .hint-footer {
+                font-size: 0.8rem;
+                bottom: 8px;
+                padding: 5px;
+            }
         }
     </style>
 </head>
-<body class="fade-in"   user-select: none; >
+<body class="fade-in">
 
-    <a href="productos.html" class="container"  user-select: none;>
-         <img src="logo.png"  alt="Logo Yune" width="200" height="300 "class="logo"  class="fade-img" onload="this.classList.add('loaded')"> 
-         <img src="bifglogo.png" alt="Sello / Logo secundario Yune" class="logo" width="200" height="300" class="fade-img" onload="this.classList.add('loaded')"> 
-        </a>
-       <footer class="hint-footer">
-    <p>Toca o haz click para acceder</p>
-       </footer>
+    <a href="productos.html" class="container">
+        <img src="logo.png" alt="Logo Yune" class="logo fade-img" width="380" height="380" onload="this.classList.add('loaded')">
+        <img src="bifglogo.png" alt="Sello / Logo secundario Yune" class="logo fade-img" width="380" height="380" onload="this.classList.add('loaded')">
+    </a>
+
+    <footer class="hint-footer">
+        <p>Toca o haz click para acceder</p>
+    </footer>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
